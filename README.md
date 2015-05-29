@@ -15,14 +15,14 @@ Though you can freely utilize this distribution (see [License.md](https://github
  These images are identified by file prefix **2_** with inside the /DataFolder/Images folder. 
 ![LaunchSitecoreTrafficGen DataFolder](https://cloud.githubusercontent.com/assets/4054499/7872994/d5ceec9a-0551-11e5-8b64-183c5e9390db.png)
 
-The JMeter images data file uses public faces in the wild images **after** the images under the creative commons rights have been used.  
+To minimize the probability of license/copy violation, the JMeter data file (_image*.csv) will first use the images from the creative common rights list, and then use the images from **public faces in the wild** (with _2 prefix).  
 
 ## Preparing the website
 Before using the JMeter script, you need to add a few files to Sitecore, so that visitor behaviors can be mutated.  To prepare the website, you can use the Sitecore installation package [LaunchSitecoreTrafficGen*.zip](https://github.com/edvineshagh/LaunchSitecoreTrafficGen/blob/master/LaunchSitecoreTrafficGen-1.0.0.zip) 
 
 Alternatively, for a manual install, follow these steps:
 
-* `ContactUpdate.aspx` and `abandon.aspx`to the root of the website.
+* Copy `ContactUpdate.aspx` and `abandon.aspx`to the root of the website.
 
 * Copy the configuration file `LaunchSitecoreTrafficGen.Sitecore.Analytics.Tracking` to Sitecore's `/App_config/Include` folder.
 
@@ -66,12 +66,12 @@ Historic data is handled by **NumberOfInteractions** and **IterationPastDaysCoun
 A special node **Generate Variables**, is responsible for creating unique and repeatable data elements for each contact, such as: Birth date, name suffix, salutation.  These elements utilize the full name [hash code](https://msdn.microsoft.com/en-us/library/system.object.gethashcode%28v=vs.110%29.aspx) to re-generate user data.  This was done because each user photo is unique and associated with a name.  
 ![](https://cloud.githubusercontent.com/assets/4054499/7872579/071050b8-054e-11e5-8fb2-44bb067005e9.png)
 
-Though you wont need to update the the above variables, you may need to change the frequency of adding a Sitecore campaign code to the landing page.  The frequency of the campaign codes, specified in the **CSV SC Campaign Tracking**, is handled in the node **set landingPageQueryString var**.  In below example, the campaign query string is add to the landing page URL 80% of the time.
+Though you wont need to update the the above variables, you may need to change the frequency of adding a Sitecore campaign code to the landing page.  The frequency of the campaign codes, specified in the **CSV SC Campaign Tracking** node, is handled in the node **set landingPageQueryString var**.  In below example, the campaign query string is add to the landing page URL 80% of the time.
 ![](https://cloud.githubusercontent.com/assets/4054499/7872578/070e78a6-054e-11e5-8206-70311e94e9f9.png)
 
 The **Random Controller – Landing Page** node insures that only a small set of pages are randomly selected as the landing page.  
 
-Subsequent **Random If Controller** insure that the the requesting pages are not called all the time; thereby, giving varying the visitor page requests.</p>
+Subsequent **Random If Controller** insure that the the requesting pages are not called all the time; thereby, varying the visitor page requests.</p>
 ![](https://cloud.githubusercontent.com/assets/4054499/7872585/0728cfd0-054e-11e5-892d-98e2338b80ad.png)
 
 Lastly, the **Update Contact** is called to change the visitor history information and commit data into the database by calling the `~/ContactUpdate.aspx` and `~/abandon.aspx` respectively.
