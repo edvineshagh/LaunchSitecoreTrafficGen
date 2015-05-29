@@ -8,18 +8,13 @@ Here is a sample of what you can expect:
 
 
 ## Copy rights ##
-<div style="background-color:#eee; font-style:italic">
-<p>The photo images are obtained from two sources,  which include: 
-<ol><li><a href="randomuser.me/photos">randomuser.me/photos</a><br>
-These images are made available under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en">Creative Commons rights</a>.</li>
-<li><a href="http://vis-www.cs.umass.edu/lfw/">Labeled faces in the wild</a></a><br>
- These images are compiled by the University of <a href="http://vis-www.cs.umass.edu/">Massachusetts computer vision lab</a>.  Many of these images are photographs of athletes, celebrities, government officials, etc; therefore, it is safe to assume that these photos may not be used in a commercial capacity without explicit permission.<br>
+The photo images are obtained from two sources,  which include: 
+
+* [randomuser.me/photos](randomuser.me/photos) - these images are made available under [Creative Commons rights](http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en).
+* [Labeled faces in the wild](http://vis-www.cs.umass.edu/lfw/) - these images are compiled by the University of [Massachusetts computer vision lab](http://vis-www.cs.umass.edu/).  Many of these images are photographs of athletes, celebrities, government officials, etc; therefore, it is safe to assume that these photos may not be used in a commercial capacity without explicit permission.<br>
  These images are identified by file prefix 2_ with inside the /DataFolder/Images folder. 
-<img src="https://cloud.githubusercontent.com/assets/4054499/7872994/d5ceec9a-0551-11e5-8b64-183c5e9390db.png">
-</li>
-</ol>
-  
-</div>
+![LaunchSitecoreTrafficGen DataFolder](https://cloud.githubusercontent.com/assets/4054499/7872994/d5ceec9a-0551-11e5-8b64-183c5e9390db.png)
+
 
 ## Preparing the website
 Before using the JMeter script, you need to add a few files to Sitecore, so that visitor behaviors can be mutated.  To prepare the website, you can use the Sitecore installation package [LaunchSitecoreTrafficGen*.zip](https://github.com/edvineshagh/LaunchSitecoreTrafficGen/blob/master/LaunchSitecoreTrafficGen-1.0.0.zip) 
@@ -37,9 +32,9 @@ The JMeter script generates traffic by issuing GET/POST request to your installa
 
 ##Using the JMeter scrip##
 You can watch a video here:
-<iframe width="420" height="266" webkitallowfullscreen mozallowfullscreen allowfullscreen
-	src="http://www.youtube.com/embed/JWaiXLdKOzc">
-	</iframe>
+
+[![Video](https://cloud.githubusercontent.com/assets/4054499/7891467/c527b93e-0601-11e5-9ee3-a4b544a49d8b.png)](http://www.youtube.com/embed/JWaiXLdKOzc)
+
 
 When you first open the script, you’ll notice that the data files are defined as CSV files at the top of the JMeter script.  These data files are located `DataFolder` of this distribution. 
 
