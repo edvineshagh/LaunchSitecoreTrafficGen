@@ -9,7 +9,7 @@ Here is a sample of what you can expect:
 
 ## Copy rights ##
 <div style="background-color:#eee; font-style:italic">
-<p>The photo images are obtained from two sources, include: 
+<p>The photo images are obtained from two sources,  which include: 
 <ol><li><a href="randomuser.me/photos">randomuser.me/photos</a><br>
 These images are made available under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en">Creative Commons rights</a>.</li>
 <li><a href="http://vis-www.cs.umass.edu/lfw/">Labeled faces in the wild</a></a><br>
@@ -22,7 +22,7 @@ These images are made available under <a href="http://creativecommons.org/licens
 </div>
 
 ## Preparing the website
-Before using the JMeter script, you need to add a few files to Sitecore, so that visitor behaviors can be mutated.  To prepare the website, you can use the Sitecore installation package.
+Before using the JMeter script, you need to add a few files to Sitecore, so that visitor behaviors can be mutated.  To prepare the website, you can use the Sitecore installation package [LaunchSitecoreTrafficGen*.zip](https://github.com/edvineshagh/LaunchSitecoreTrafficGen/blob/master/LaunchSitecoreTrafficGen-1.0.0.zip) 
 
 Alternatively, for a manual install, follow these steps:
 
@@ -33,9 +33,14 @@ Alternatively, for a manual install, follow these steps:
 * Copy the `LaunchSitecoreTarafficGen.dll` to Sitecore `website/bin `folder.
 
 The JMeter script generates traffic by issuing GET/POST request to your installation of launchsitecore and then conclude by issuing a request to `~/ContactUpdate.aspx` and  `abandon.aspx`.  The `ContactUpdate.aspx` enables a developer to create/update contact profile in an ad-hoc manner.  The script, uses the same web form to mutate visitor activities.  
-
+ 
 
 ##Using the JMeter scrip##
+You can watch a video here:
+<iframe width="420" height="266" webkitallowfullscreen mozallowfullscreen allowfullscreen
+	src="http://www.youtube.com/embed/JWaiXLdKOzc">
+	</iframe>
+
 When you first open the script, you’ll notice that the data files are defined as CSV files at the top of the JMeter script.  These data files are located `DataFolder` of this distribution. 
 
 First, specify the target website hostname by clicking on **Default host name** node.  All the web request shall use this host for the base request.
