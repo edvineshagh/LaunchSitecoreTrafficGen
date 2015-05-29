@@ -8,13 +8,14 @@ Here is a sample of what you can expect:
 
 
 ## Copy rights ##
-The photo images are obtained from two sources,  which include: 
+Though you can freely utilize this distribution (see [License.md](https://github.com/edvineshagh/LaunchSitecoreTrafficGen/blob/master/LICENSE.md "Free License")), it is important to note that you must take special notice of the images used.  The contact photo images are obtained from two sources,  which include: 
 
 * [randomuser.me/photos](randomuser.me/photos) - these images are made available under [Creative Commons rights](http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en).
-* [Labeled faces in the wild](http://vis-www.cs.umass.edu/lfw/) - these images are compiled by the University of [Massachusetts computer vision lab](http://vis-www.cs.umass.edu/).  Many of these images are photographs of athletes, celebrities, government officials, etc; therefore, it is safe to assume that these photos may not be used in a commercial capacity without explicit permission.<br>
- These images are identified by file prefix 2_ with inside the /DataFolder/Images folder. 
+* [Labeled faces in the wild](http://vis-www.cs.umass.edu/lfw/) - these images are compiled by the University of [Massachusetts computer vision lab](http://vis-www.cs.umass.edu/).  Many of these images are photographs of athletes, celebrities, government officials, etc; therefore, it is safe to assume that many of these photos may not be used in a commercial capacity without explicit permission.<br>
+ These images are identified by file prefix **2_** with inside the /DataFolder/Images folder. 
 ![LaunchSitecoreTrafficGen DataFolder](https://cloud.githubusercontent.com/assets/4054499/7872994/d5ceec9a-0551-11e5-8b64-183c5e9390db.png)
 
+The JMeter images data file uses public faces in the wild images **after** the images under the creative commons rights have been used.  
 
 ## Preparing the website
 Before using the JMeter script, you need to add a few files to Sitecore, so that visitor behaviors can be mutated.  To prepare the website, you can use the Sitecore installation package [LaunchSitecoreTrafficGen*.zip](https://github.com/edvineshagh/LaunchSitecoreTrafficGen/blob/master/LaunchSitecoreTrafficGen-1.0.0.zip) 
