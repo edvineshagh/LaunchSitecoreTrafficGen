@@ -1,0 +1,5 @@
+http://www.Google.com?q=
+http://www.Yahoo.com?p=
+http://www.Bing.com?q=
+http://search.lycos.com?query=
+http://www.baidu.com?wd=
